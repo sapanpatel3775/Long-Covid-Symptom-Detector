@@ -148,6 +148,6 @@ void printToScreen() {
     oled.print(F("HR: ")); oled.println(heartRate, DEC);
     oled.print(F("SPO2: ")); oled.println(spo2, DEC);
   } else {
-    oled.print(F("Not valid"));
+    oled.print(F("The HeartRate is not valid"));
   }
 }
