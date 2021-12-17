@@ -130,8 +130,12 @@ if (emgB == true) {
 if (pulseOxB == true) {
   count++;
 }
-if (count >= 2) {
-
+if (count >= 1) {
+ oled.clear();
+ oled.setCursor(0,0);
+ oled.println("You need to visit a healthcare Proffesional");
+ oled.println("You are experiencing long-covid symptoms");
+} 
   pinMode(7, output);
   for (int  i = 0; i < 5000; i++) {
     digitalWrite(7, HIGH);
